@@ -1,0 +1,150 @@
+# Every package here is checked at the end of the build. Add a line to add a check.
+
+# Single-cell: core
+Seurat
+SeuratObject
+sctransform
+harmony
+presto
+BPCells
+SeuratData
+SeuratWrappers
+SeuratDisk
+Azimuth
+scran
+scater
+scuttle
+bluster
+batchelor
+glmGamPoi
+zellkonverter
+LoomExperiment
+# Single-cell: QC, ambient RNA, doublets
+DropletUtils
+SoupX
+celda
+scDblFinder
+scds
+DoubletFinder
+# Single-cell: annotation and scoring
+SingleR
+celldex
+UCell
+AUCell
+escape
+clustree
+# Single-cell: DE, abundance, trajectories
+MAST
+muscat
+speckle
+miloR
+monocle3
+slingshot
+tradeSeq
+# Single-cell: communication, TF activity, CNV, VDJ, spatial
+CellChat
+nichenetr
+decoupleR
+OmnipathR
+dorothea
+progeny
+infercnv
+copykat
+scRepertoire
+SpatialExperiment
+spacexr
+# Single-cell: plotting
+scCustomize
+SCpubr
+dittoSeq
+Nebulosa
+schex
+
+# Bulk RNA-seq
+DESeq2
+edgeR
+limma
+apeglm
+ashr
+tximport
+tximeta
+DEXSeq
+variancePartition
+sva
+
+# Pathways
+clusterProfiler
+DOSE
+enrichplot
+ReactomePA
+pathview
+fgsea
+GSEABase
+GSVA
+msigdbr
+metap
+
+# ATAC-seq and chromatin
+Signac
+chromVAR
+motifmatchr
+TFBSTools
+JASPAR2024
+DiffBind
+ChIPseeker
+
+# Methylation
+minfi
+methylKit
+bsseq
+DSS
+DMRcate
+sesame
+ENmix
+missMethyl
+
+# Co-expression
+WGCNA
+
+# Visualization
+ComplexHeatmap
+EnhancedVolcano
+Gviz
+ggplot2
+patchwork
+cowplot
+ggrepel
+ggridges
+pheatmap
+circlize
+
+# Annotation
+org.Hs.eg.db
+org.Mm.eg.db
+org.Rn.eg.db
+GO.db
+EnsDb.Hsapiens.v86
+EnsDb.Mmusculus.v79
+TxDb.Hsapiens.UCSC.hg38.knownGene
+TxDb.Mmusculus.UCSC.mm10.knownGene
+TxDb.Mmusculus.UCSC.mm39.knownGene
+BSgenome.Hsapiens.UCSC.hg38
+biomaRt
+AnnotationHub
+ExperimentHub
+
+# Infrastructure and reporting
+tidyverse
+dplyr
+SingleCellExperiment
+data.table
+qs2
+future
+Matrix
+hdf5r
+rhdf5
+HDF5Array
+BiocManager
+rmarkdown
+knitr
+quarto

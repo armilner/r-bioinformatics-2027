@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "A Comprehensive R Container for Reproducible Bioinformatics Analysis on HPC Clusters in 2027"
+message: "If you use this container in your work, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Milner
+    given-names: Andrew
+    orcid: https://orcid.org/0009-0006-8313-913X
+repository-code: https://github.com/armilner/r-bioinformatics-2027
+abstract: >
+  A ready-to-use R container for bioinformatics analysis. Covers single-cell
+  RNA-seq (QC, ambient RNA, doublets, annotation, trajectories, cell-cell
+  communication, CNV, VDJ), spatial deconvolution, bulk RNA-seq, methylation,
+  ATAC-seq, and pathway enrichment, plus RStudio Server and Quarto. Built on
+  R 4.6.1 with Bioconductor 3.23. Runs on HPC clusters through Apptainer or
+  locally through Docker.
+version: 1.0.0
+license: MIT
+keywords:
+  - bioinformatics
+  - single-cell RNA-seq
+  - spatial transcriptomics
+  - RNA-seq
+  - methylation
+  - ATAC-seq
+  - R
+  - container
+  - reproducibility

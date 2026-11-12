@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM bioconductor/bioconductor_docker:3.23-R-4.6.1
 
 LABEL maintainer="Andrew Milner"
@@ -69,7 +70,11 @@ RUN R -e "BiocManager::install(c( \
 ), ask = FALSE, update = FALSE)"
 
 # ── Single-cell: GitHub-only packages ─────────────────────────────────────────
-RUN R -e "remotes::install_github(c( \
+# The build passes a GitHub token as a secret so GitHub doesn't block the downloads
+# (anonymous downloads are rate limited). The token is not saved in the image.
+RUN --mount=type=secret,id=GITHUB_PAT \
+    GITHUB_PAT=$(cat /run/secrets/GITHUB_PAT 2>/dev/null) \
+    R -e "remotes::install_github(c( \
     'bnprks/BPCells/r', \
     'satijalab/seurat-data', \
     'satijalab/seurat-wrappers', \
@@ -81,7 +86,9 @@ RUN R -e "remotes::install_github(c( \
     'dmcable/spacexr', \
     'navinlabcode/copykat' \
 ), upgrade = 'never')"
-RUN R -e "remotes::install_github('satijalab/azimuth', upgrade = 'never')"
+RUN --mount=type=secret,id=GITHUB_PAT \
+    GITHUB_PAT=$(cat /run/secrets/GITHUB_PAT 2>/dev/null) \
+    R -e "remotes::install_github('satijalab/azimuth', upgrade = 'never')"
 
 # ── Bulk RNA-seq and differential expression ──────────────────────────────────
 RUN R -e "BiocManager::install(c( \

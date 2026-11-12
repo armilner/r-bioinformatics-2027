@@ -3,7 +3,7 @@
 [![Build and Push Container](https://github.com/armilner/r-bioinformatics-2027/actions/workflows/build.yml/badge.svg)](https://github.com/armilner/r-bioinformatics-2027/actions/workflows/build.yml)
 [![R](https://img.shields.io/badge/R-4.6.1-blue)](https://www.r-project.org/)
 [![Bioconductor](https://img.shields.io/badge/Bioconductor-3.23-green)](https://bioconductor.org/)
-[![Seurat](https://img.shields.io/badge/Seurat-v5-blueviolet)](https://satijalab.org/seurat/)
+[![Seurat](https://img.shields.io/badge/Seurat-6.0-blueviolet)](https://satijalab.org/seurat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 [![Apptainer](https://img.shields.io/badge/Apptainer-compatible-orange)](https://apptainer.org/)
 

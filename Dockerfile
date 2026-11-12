@@ -53,11 +53,11 @@ RUN R -e "BiocManager::install(c( \
 
 # ── Single-cell: core, QC, ambient RNA, doublets ──────────────────────────────
 RUN R -e "install.packages(c('Seurat', 'SeuratObject', 'sctransform', 'harmony', \
-    'presto', 'SoupX', 'clustree', 'scCustomize', 'SCpubr', 'UCell'))"
+    'presto', 'SoupX', 'clustree', 'scCustomize', 'SCpubr'))"
 RUN R -e "BiocManager::install(c( \
     'scran', 'scater', 'scuttle', 'bluster', 'batchelor', 'glmGamPoi', \
     'DropletUtils', 'celda', 'scDblFinder', 'scds', \
-    'SingleR', 'celldex', 'MAST', 'AUCell', 'zellkonverter', \
+    'SingleR', 'celldex', 'MAST', 'AUCell', 'UCell', 'zellkonverter', \
     'dittoSeq', 'Nebulosa', 'schex' \
 ), ask = FALSE, update = FALSE)"
 
